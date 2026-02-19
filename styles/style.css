@@ -56,7 +56,8 @@ body {
 }
 
 .menu .navbar ul li a:hover {
-    color: burlywood;
+    color: #2136AB;
+
 }
 
 #menu {
@@ -90,6 +91,7 @@ body {
     color: whitesmoke;
     padding: 0 250px;
     margin-bottom: 25px;
+    font-weight: 600;
 }
 
 
@@ -130,6 +132,7 @@ body {
     color: whitesmoke;
     padding: 0 250px;
     margin-bottom: 35px;
+    font-weight: 600;
 }
 
 .coffee-group {
@@ -146,9 +149,10 @@ body {
 
 
 .coffee-1 p {
-    color: black;
+    color: #2136AB;
     text-align: left;
     padding: 0 30px;
+    font-weight: 600;
 }
 
 .coffee-img {
@@ -166,7 +170,7 @@ body {
 }
 
 .coffee-1 h3 {
-    color: black;
+    color: #2136AB;
     font-size: 20px;
     margin-bottom: 15px;
     text-transform: uppercase;
@@ -226,13 +230,17 @@ body {
 }
 
 .services-1 img {
-    width: 25px;
+    width: 35px;
     margin-bottom: 15px;
 }
 
 .services-1 h3 {
     color: whitesmoke;
     font-size: 18px;
+}
+
+.services p {
+    font-weight: 600;
 }
 
 .general {
@@ -247,6 +255,7 @@ body {
 
 .general-1 p {
     color: #2136AB;
+    font-weight: 600;
 }
 
 .general-2 {
@@ -273,7 +282,7 @@ h2 {
 }
 
 p {
-    color: whitesmoke;
+    color: #2136AB;
     font-size: 16px;
     margin: 25px 0 45px 0;
 }
@@ -281,6 +290,7 @@ p {
 .blog {
     padding: 100px 0;
     text-align: center;
+
 }
 
 .blog-content {
@@ -293,15 +303,19 @@ p {
 }
 
 .blog-1 img {
-    width: 200px;
-    border-radius: 15px;
+    width: 450px;
+    border-radius: 10px;
     margin-bottom: 15px;
 }
 
 .blog-1 h3 {
     font-size: 25px;
-    color: black;
+    color: #2136AB;
 } 
+
+.blog p {
+    font-weight: 600;
+}
 
 
 .footer {
@@ -379,3 +393,4 @@ button::before {
 button:hover::before {
  transform: translate3d(100%, 0, 0);
 }
+
