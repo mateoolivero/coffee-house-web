@@ -18,7 +18,7 @@ body {
 }
 
 .header {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../assets/0dcaaf9de66eda417f1bb5ca47e615af.jpg );
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../assets/head.jpg );
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -107,7 +107,7 @@ body {
 
 .coffee {
     padding: 100px 0;
-    background-color: #402A1C;
+    background-color: #2136AB;
     position: relative;
 }
 
@@ -178,7 +178,7 @@ body {
 }
 
 .description {
-    background-color: #DCDCDC;
+    background-color: white;
     padding: 10px;
     padding-bottom: 20px;
     margin: 20px;
@@ -186,7 +186,7 @@ body {
 }
 
 .services {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../assets/bg2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../assets/bg3.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -231,7 +231,7 @@ body {
 }
 
 .services-1 h3 {
-    color: antiquewhite;
+    color: whitesmoke;
     font-size: 18px;
 }
 
@@ -242,7 +242,11 @@ body {
 .general-1 {
     width: 50%;
     padding: 100px 250px 100px 100px;
-    background-color: grey;
+    background-color: whitesmoke;
+}
+
+.general-1 p {
+    color: #2136AB;
 }
 
 .general-2 {
@@ -264,7 +268,7 @@ body {
 h2 {
     font-size: 55px;
     line-height: 70px;
-    color: black;
+    color: #2136AB;
     margin-bottom: 20px;
 }
 
@@ -365,7 +369,7 @@ button::after {
 
 button::before {
  content: "";
- background: #2D3D1C;
+ background: #2136AB;
  width: 120%;
  left: -10%;
  transform: skew(30deg);
