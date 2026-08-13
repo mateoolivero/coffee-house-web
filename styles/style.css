@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,500&family=Jost:wght@400;500;600;700&family=Yellowtail&display=swap');
 
 * {
     margin: 0;
@@ -9,7 +9,12 @@
 }
 
 body {
-    font-family: "Baskerville", sans-serif;
+    font-family: "Jost", sans-serif;
+}
+
+h1, h2, h3,
+.logo {
+    font-family: "Fraunces", serif;
 }
 
 .container {
@@ -148,33 +153,67 @@ body {
 
 .coffee-1 {
     width: 280px;
-    background: whitesmoke;
-    border-radius: 16px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 14px;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
-    justify-content: space-between;
+    text-align: left;
 }
 
 .coffee-1:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
 }
 
 /* Imagen */
-.coffee-1 img {
+.coffee-1-image {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.coffee-1-image img {
     width: 100%;
-    height: 220px;
+    height: 200px;
     object-fit: cover;
+    display: block;
     background: whitesmoke;
+}
+
+/* Botón favorito */
+.fav-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border-radius: 50%;
+    background: #fff;
+    color: #2136AB;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.fav-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.fav-btn:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.28);
+    background: #fff;
+    color: #2136AB;
 }
 
 /* Contenido */
 .description {
-    padding: 18px;
+    padding: 16px 4px 4px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
+    text-align: left;
 }
 
 /* Título */
@@ -185,6 +224,29 @@ body {
     margin: 0;
 }
 
+/* Variantes */
+.variants {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.variant {
+    font-size: 12px;
+    font-weight: 500;
+    color: #666;
+    padding: 4px 12px;
+    border-radius: 999px;
+    border: 1px solid #ddd;
+}
+
+.variant.active {
+    color: #2136AB;
+    border-color: #2136AB;
+    background: rgba(33, 54, 171, 0.1);
+    font-weight: 600;
+}
+
 /* Texto */
 .description p {
     font-size: 14px;
@@ -193,33 +255,41 @@ body {
     margin: 0;
 }
 
-/* Contenedor de botones */
-.description > div {
+/* Precio + carrito */
+.price-row {
     display: flex;
-    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
     margin-top: 8px;
 }
 
-/* Botones base */
-.description button {
-    flex: 1;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    font-size: 13px;
-    font-weight: 500;
-    transition: all 0.2s ease;
+.price {
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
 }
 
-/* Botón principal (Comprar) */
-.description button {
-    background: black;
+.btn-cart {
+    width: auto;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    font-size: 14px;
+    background: #2136AB;
     color: whitesmoke;
 }
 
-.description button {
-    background: black;
+.btn-cart:hover {
+    background: #16247d;
+    color: whitesmoke;
+    box-shadow: 0 6px 16px rgba(33, 54, 171, 0.45);
+}
+
+.btn-cart svg {
+    width: 16px;
+    height: 16px;
 }
 
 .services {
@@ -330,26 +400,131 @@ p {
 
 .blog-content {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
-
-.blog-1 {
-    padding: 15px 55px;
-}
-
-.blog-1 img {
-    width: 450px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.blog-1 h3 {
-    font-size: 25px;
-    color: #2136AB;
-} 
 
 .blog p {
     font-weight: 600;
+}
+
+/* Card estilo etiqueta de producto */
+.blog-1 {
+    width: 300px;
+    background: #f4efe4;
+    border-radius: 28px;
+    padding: 16px 16px 22px;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.blog-1:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.2);
+}
+
+.blog-1-frame {
+    position: relative;
+    background: #2136AB;
+    border-radius: 22px;
+    padding: 22px 14px 14px;
+}
+
+.blog-1-badge {
+    position: absolute;
+    top: -14px;
+    left: 22px;
+    font-family: "Yellowtail", cursive;
+    font-size: 30px;
+    color: #111;
+    transform: rotate(-4deg);
+    z-index: 2;
+}
+
+.blog-1-photo {
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.blog-1-photo img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.blog-1-body {
+    padding-top: 18px;
+}
+
+.blog-1-title {
+    font-family: "Jost", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 1.15;
+    color: #111;
+    margin: 0;
+}
+
+.blog-1-meta {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.blog-1-meta .meta-row {
+    display: flex;
+    gap: 6px;
+    font-size: 13px;
+}
+
+.blog-1-meta .label {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #111;
+}
+
+.blog-1-meta .value {
+    color: #2136AB;
+    font-weight: 600;
+}
+
+.blog-1-text {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+    margin: 14px 0 0;
+    font-weight: 400;
+}
+
+.blog-1-barcode {
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.blog-1-barcode svg {
+    width: 120px;
+    height: 32px;
+}
+
+.blog-1-barcode svg rect {
+    fill: #111;
+}
+
+.blog-1-barcode span {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #555;
 }
 
 
@@ -380,56 +555,323 @@ p {
     margin-bottom: 15px;
 }
 
-/* From Uiverse.io by BHARGAVPATEL1244 */ 
 button {
  outline: none;
  cursor: pointer;
  border: none;
- padding: 0.9rem 2rem;
+ width: 170px;
+ height: 60px;
  margin: 0;
  font-family: inherit;
- font-size: inherit;
- position: relative;
- display: inline-block;
  letter-spacing: 0.05rem;
  font-weight: 700;
- font-size: 17px;
- border-radius: 500px;
- overflow: hidden;
- background: black;
- color: whitesmoke;
+ font-size: 18px;
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 50px;
+ background: #fff;
+ color: #000;
+ transition: all 0.4s;
 }
 
-button span {
- position: relative;
- z-index: 10;
- transition: color 0.4s;
-}
-
-button:hover span {
- color: whitesmoke;
-}
-
-button::before,
-button::after {
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- z-index: 0;
-}
-
-button::before {
- content: "";
+button:hover {
+ box-shadow: inset 0 0 0 4px whitesmoke,
+             inset 0 0 0 8px #2136AB,
+             inset 0 0 0 12px black;
  background: #2136AB;
- width: 120%;
- left: -10%;
- transform: skew(30deg);
- transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+ color: whitesmoke;
 }
 
-button:hover::before {
- transform: translate3d(100%, 0, 0);
+/* ===================== RESPONSIVE ===================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+    .menu {
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    .header-content h1 {
+        font-size: 52px;
+        line-height: 58px;
+    }
+
+    .header-content p {
+        padding: 0 100px;
+    }
+
+    .coffee-content h2,
+    .services-content h2 {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    .txt-p {
+        padding: 0 60px;
+    }
+
+    .services-content p {
+        padding: 0 60px;
+    }
+
+    .coffee-group {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .coffee-1 {
+        width: 45%;
+    }
+
+    .services-group {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .general-1 {
+        padding: 70px 60px;
+    }
+
+    .blog-1 {
+        width: 260px;
+    }
+
+    .footer-content {
+        flex-wrap: wrap;
+        gap: 30px;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .link {
+        width: 40%;
+    }
+
+    h2 {
+        font-size: 42px;
+        line-height: 50px;
+    }
+}
+
+/* Mobile / Tablet portrait */
+@media (max-width: 768px) {
+
+    .menu {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .img-logo {
+        width: 140px;
+    }
+
+    .menu label {
+        display: block;
+        z-index: 20;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        max-height: 0;
+        overflow: hidden;
+        background: rgba(0, 0, 0, 0.9);
+        transition: max-height 0.35s ease;
+    }
+
+    .menu .navbar ul {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .menu .navbar ul li {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu:checked ~ .navbar {
+        max-height: 400px;
+    }
+
+    .header-content h1 {
+        font-size: 38px;
+        line-height: 44px;
+        margin-bottom: 20px;
+    }
+
+    .header-content p {
+        padding: 0 20px;
+        font-size: 15px;
+    }
+
+    .coffee {
+        padding: 70px 0;
+    }
+
+    .coffee-content {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .coffee-content h2,
+    .services-content h2 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .txt-p,
+    .services-content p {
+        padding: 0;
+        font-size: 15px;
+    }
+
+    .coffee-group {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        gap: 18px;
+        padding: 4px 8% 10px;
+        margin-bottom: 30px;
+    }
+
+    .coffee-group::-webkit-scrollbar {
+        display: none;
+    }
+
+    .coffee-1 {
+        flex: 0 0 78%;
+        width: auto;
+        max-width: 300px;
+        scroll-snap-align: center;
+    }
+
+    .services-group {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .general {
+        flex-direction: column;
+    }
+
+    .general-1,
+    .general-2,
+    .general-3 {
+        width: 100%;
+    }
+
+    .general-1 {
+        padding: 50px 30px;
+    }
+
+    .general-2,
+    .general-3 {
+        min-height: 280px;
+    }
+
+    .blog {
+        padding: 70px 0;
+    }
+
+    .blog-content {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding: 4px 8% 20px;
+        gap: 18px;
+    }
+
+    .blog-content::-webkit-scrollbar {
+        display: none;
+    }
+
+    .blog-1 {
+        flex: 0 0 78%;
+        width: auto;
+        max-width: 300px;
+        scroll-snap-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        padding-left: 8%;
+        padding-right: 8%;
+        gap: 25px;
+    }
+
+    .link {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    button {
+        width: 150px;
+        height: 54px;
+        font-size: 15px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+
+    .img-logo {
+        width: 115px;
+    }
+
+    .header-content h1 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .header-content p {
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    .coffee-content h2,
+    .services-content h2,
+    h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .coffee-1 {
+        max-width: 100%;
+    }
+
+    .btn-cart {
+        font-size: 12px;
+        padding: 8px 14px;
+    }
+
+    .blog-1-title {
+        font-size: 19px;
+    }
+
+    button {
+        width: 135px;
+        height: 48px;
+        font-size: 14px;
+    }
 }
 
