@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas | Bleu Cafetería</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../assets/favicon-bleu.jpg" type="image/x-icon">
+</head>
+<body>
+
+    <header class="header sub-header">
+        <div class="menu container">
+
+            <a href="../index.html" class="logo"><img src="../assets/logo.png" alt="" class="img-logo"></a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="../assets/menu.png" class="menu-icono" alt="">
+            </label>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../index.html">Servicios</a></li>
+                    <li><a href="products.html">Productos</a></li>
+                    <li><a href="#footer">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="header-content container">
+            <span class="breadcrumb">Inicio / Ubicación / Reservas</span>
+            <h1>Reservá tu mesa</h1>
+            <p>
+                Para grupos de más de 6 personas recomendamos reservar con anticipación.
+            </p>
+        </div>
+    </header>
+
+    <section class="page-section">
+        <h2>datos de tu reserva</h2>
+        <p class="section-lead">
+            Completá el formulario y nuestro equipo te confirma la disponibilidad por WhatsApp o email en menos de 24 horas.
+        </p>
+
+        <div class="form-card">
+            <form onsubmit="return false;">
+                <div class="form-row">
+                    <label for="nombre">Nombre y apellido</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Ana Gómez">
+                </div>
+                <div class="form-row two-col">
+                    <div>
+                        <label for="fecha">Fecha</label>
+                        <input type="date" id="fecha" name="fecha">
+                    </div>
+                    <div>
+                        <label for="hora">Hora</label>
+                        <input type="time" id="hora" name="hora">
+                    </div>
+                </div>
+                <div class="form-row two-col">
+                    <div>
+                        <label for="personas">Cantidad de personas</label>
+                        <select id="personas" name="personas">
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6+</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="sucursal">Sucursal</label>
+                        <select id="sucursal" name="sucursal">
+                            <option>Bleu Centro</option>
+                            <option>Bleu Costanera</option>
+                            <option>Bleu Fisherton</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="notas">Notas (opcional)</label>
+                    <textarea id="notas" name="notas" placeholder="Alergias, ocasión especial, preferencia de mesa..."></textarea>
+                </div>
+                <button type="submit"><span>Reservar</span></button>
+            </form>
+            <p class="form-note">
+                Esta es una demostración: el formulario no envía datos reales. Para reservar hoy mismo, escribinos por WhatsApp.
+            </p>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+
+        <div class="footer-top container">
+
+            <p class="footer-intro">Bleu es café de especialidad y pastelería de autor en Rosario, Argentina.</p>
+
+            <div class="footer-content">
+
+                <div class="link">
+                    <h3>Menú</h3>
+                    <ul>
+                        <li><a href="cafes.html">Cafés</a></li>
+                        <li><a href="bebidas-frias.html">Bebidas frías</a></li>
+                        <li><a href="pasteleria.html">Pastelería</a></li>
+                        <li><a href="opciones-veganas.html">Opciones veganas</a></li>
+                    </ul>
+                </div>
+
+                <div class="link">
+                    <h3>Nosotros</h3>
+                    <ul>
+                        <li><a href="nuestra-historia.html">Nuestra historia</a></li>
+                        <li><a href="el-cafe-que-usamos.html">El café que usamos</a></li>
+                        <li><a href="equipo.html">Equipo</a></li>
+                        <li><a href="trabaja-con-nosotros.html">Trabajá con nosotros</a></li>
+                    </ul>
+                </div>
+
+                <div class="link">
+                    <h3>Ubicación</h3>
+                    <ul>
+                        <li><a href="como-llegar.html">Cómo llegar</a></li>
+                        <li><a href="horarios.html">Horarios</a></li>
+                        <li><a href="sucursales.html">Sucursales</a></li>
+                        <li><a href="reservas.html">Reservas</a></li>
+                    </ul>
+                </div>
+
+                <div class="link">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><a href="whatsapp.html">WhatsApp</a></li>
+                        <li><a href="instagram.html">Instagram</a></li>
+                        <li><a href="email.html">Email</a></li>
+                        <li><a href="soporte.html">Soporte</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-cta-group">
+                <div class="footer-cta">
+                    <a href="whatsapp.html">
+                        Escribinos
+                        <span class="footer-cta-arrow">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </span>
+                    </a>
+                    <p class="footer-cta-caption">Te respondemos al toque</p>
+                </div>
+                <div class="footer-cta">
+                    <a href="instagram.html">
+                        Seguinos
+                        <span class="footer-cta-arrow">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </span>
+                    </a>
+                    <p class="footer-cta-caption">@bleu.cafeteria</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-wordmark-wrap">
+            <p class="footer-wordmark">Bleu.</p>
+        </div>
+
+    </footer>
+
+    <div class="footer-bottom-bar">
+        <div class="footer-legal">
+            <span>Bleu. &copy;2026</span>
+            <span>·</span>
+            <a href="#">Política de privacidad</a>
+        </div>
+        <div class="footer-location">Rosario, Argentina</div>
+    </div>
+</body>
+</html>

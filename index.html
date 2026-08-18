@@ -10,6 +10,12 @@
 <body>
     
     <header class="header">
+
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url(assets/head.jpg);"></div>
+            <div class="hero-slide" style="background-image: url(assets/hero-brioche.jpg); background-position: center center;"></div>
+        </div>
+
         <div class="menu container">
 
             <a href="#" class="logo"><img src="assets/logo.png" alt="" class="img-logo"></a>
@@ -44,6 +50,18 @@
 
     </header>
 
+    <script>
+        (function () {
+            var slides = document.querySelectorAll('.hero-slide');
+            if (slides.length < 2) return;
+            var current = 0;
+            setInterval(function () {
+                slides[current].classList.remove('active');
+                current = (current + 1) % slides.length;
+                slides[current].classList.add('active');
+            }, 5000);
+        })();
+    </script>
 
     <section class="coffee">
 
@@ -59,13 +77,13 @@
 
                 <div class="coffee-1">
                     <div class="coffee-1-image">
-                        <img src="assets/6f799d3237689f710d7d190e9167872a.jpg" alt="">
+                        <img src="assets/coffee-pack-01.jpg" alt="">
                         <button class="fav-btn" aria-label="Favorito">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
                         </button>
                     </div>
                     <div class="description">
-                        <h3>Cafe Kercha</h3>
+                        <h3>Café La Victoria</h3>
                         <div class="variants">
                             <span class="variant">250g</span>
                             <span class="variant active">500g</span>
@@ -73,7 +91,7 @@
                             <span class="variant">2kg</span>
                         </div>
                         <p>
-                            Café de origen etíope, cultivado en altura, con perfil aromático limpio y preciso.
+                            Origen Ortega, Tolima, Colombia. Variedad Geisha, proceso lavado, con notas a crisantemo blanco, kiwi y nectarina amarilla.
                         </p>
                         <div class="price-row">
                             <span class="price">$18</span>
@@ -87,13 +105,13 @@
 
                 <div class="coffee-1">
                     <div class="coffee-1-image">
-                        <img src="assets/6f799d3237689f710d7d190e9167872a.jpg" alt="">
+                        <img src="assets/coffee-pack-02.jpg" alt="" style="object-position: center 60%;">
                         <button class="fav-btn" aria-label="Favorito">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
                         </button>
                     </div>
                     <div class="description">
-                        <h3>Cafe La Berlina</h3>
+                        <h3>Café Fazenda Pinhal 87+</h3>
                         <div class="variants">
                             <span class="variant">250g</span>
                             <span class="variant active">500g</span>
@@ -101,7 +119,7 @@
                             <span class="variant">2kg</span>
                         </div>
                         <p>
-                            Café de origen etíope, cultivado en altura, con perfil aromático limpio y preciso.
+                            Origen Minas Gerais, Brasil. Variedades Arara, Catucaí y Catiguá, proceso natural anaeróbico de 96 horas, con notas a pera, durazno amarillo y azúcar de caña.
                         </p>
                         <div class="price-row">
                             <span class="price">$20</span>
@@ -115,13 +133,13 @@
 
                 <div class="coffee-1">
                     <div class="coffee-1-image">
-                        <img src="assets/6f799d3237689f710d7d190e9167872a.jpg" alt="">
+                        <img src="assets/coffee-pack-03.jpg" alt="">
                         <button class="fav-btn" aria-label="Favorito">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
                         </button>
                     </div>
                     <div class="description">
-                        <h3>Cafe Yula</h3>
+                        <h3>Café Dulce Misterio</h3>
                         <div class="variants">
                             <span class="variant">250g</span>
                             <span class="variant active">500g</span>
@@ -129,7 +147,7 @@
                             <span class="variant">2kg</span>
                         </div>
                         <p>
-                            Café de origen etíope, cultivado en altura, con perfil aromático limpio y preciso.
+                            Origen Nariño, Colombia. Variedad Bourbon Aji, proceso lavado, con notas a melón, manzanilla y miel.
                         </p>
                         <div class="price-row">
                             <span class="price">$16</span>
@@ -143,13 +161,13 @@
 
                 <div class="coffee-1">
                     <div class="coffee-1-image">
-                        <img src="assets/6f799d3237689f710d7d190e9167872a.jpg" alt="">
+                        <img src="assets/coffee-pack-01.jpg" alt="">
                         <button class="fav-btn" aria-label="Favorito">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
                         </button>
                     </div>
                     <div class="description">
-                        <h3>Cafe Yula</h3>
+                        <h3>Café La Victoria</h3>
                         <div class="variants">
                             <span class="variant">250g</span>
                             <span class="variant active">500g</span>
@@ -157,7 +175,7 @@
                             <span class="variant">2kg</span>
                         </div>
                         <p>
-                            Café de origen etíope, cultivado en altura, con perfil aromático limpio y preciso.
+                            Origen Ortega, Tolima, Colombia. Variedad Geisha, proceso lavado, con notas a crisantemo blanco, kiwi y nectarina amarilla.
                         </p>
                         <div class="price-row">
                             <span class="price">$19</span>
@@ -171,13 +189,13 @@
 
                 <div class="coffee-1">
                     <div class="coffee-1-image">
-                        <img src="assets/6f799d3237689f710d7d190e9167872a.jpg" alt="">
+                        <img src="assets/coffee-pack-03.jpg" alt="">
                         <button class="fav-btn" aria-label="Favorito">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
                         </button>
                     </div>
                     <div class="description">
-                        <h3>Cafe Yula</h3>
+                        <h3>Café Dulce Misterio</h3>
                         <div class="variants">
                             <span class="variant">250g</span>
                             <span class="variant active">500g</span>
@@ -185,7 +203,7 @@
                             <span class="variant">2kg</span>
                         </div>
                         <p>
-                            Café de origen etíope, cultivado en altura, con perfil aromático limpio y preciso.
+                            Origen Nariño, Colombia. Variedad Bourbon Aji, proceso lavado, con notas a melón, manzanilla y miel.
                         </p>
                         <div class="price-row">
                             <span class="price">$17</span>
@@ -197,6 +215,33 @@
                     </div>
                 </div>
 
+                <div class="coffee-1">
+                    <div class="coffee-1-image">
+                        <img src="assets/coffee-pack-02.jpg" alt="" style="object-position: center 60%;">
+                        <button class="fav-btn" aria-label="Favorito">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="description">
+                        <h3>Café Fazenda Pinhal 87+</h3>
+                        <div class="variants">
+                            <span class="variant">250g</span>
+                            <span class="variant active">500g</span>
+                            <span class="variant">1kg</span>
+                            <span class="variant">2kg</span>
+                        </div>
+                        <p>
+                            Origen Minas Gerais, Brasil. Variedades Arara, Catucaí y Catiguá, proceso natural anaeróbico de 96 horas, con notas a pera, durazno amarillo y azúcar de caña.
+                        </p>
+                        <div class="price-row">
+                            <span class="price">$22</span>
+                            <button class="btn-cart">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                                <span>Agregar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
@@ -224,6 +269,11 @@
                     <div class="services-1">
                         <img src="assets/i3.png" alt="">
                         <h3>Insumos Premium</h3>
+                    </div>
+
+                    <div class="services-1">
+                        <img src="assets/i1.png" alt="">
+                        <h3>Ambiente Acogedor</h3>
                     </div>
                 </div>
 
@@ -564,56 +614,152 @@
                     </div>
                 </div>
 
+                <div class="blog-1">
+                    <div class="blog-1-frame">
+                        <span class="blog-1-badge">Bleu.</span>
+                        <div class="blog-1-photo">
+                            <img src="assets/menu-bleu.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="blog-1-body">
+                        <h3 class="blog-1-title">Ritual de la<br>mañana.</h3>
+                        <div class="blog-1-meta">
+                            <div class="meta-row"><span class="label">Categoría</span><span class="value">Guía de Café</span></div>
+                            <div class="meta-row"><span class="label">Nombre</span><span class="value">Rutina</span></div>
+                            <div class="meta-row"><span class="label">Lectura</span><span class="value">2 min</span></div>
+                        </div>
+                        <p class="blog-1-text">
+                            Un ritual simple ordena el día: moler, calentar el agua a 92°C y esperar sin apuro los primeros minutos de extracción. Diez minutos de pausa consciente antes de empezar cualquier cosa.
+                        </p>
+                        <div class="blog-1-barcode">
+                            <svg viewBox="0 0 120 34" preserveAspectRatio="none">
+                                <rect x="0" y="0" width="2" height="34"></rect>
+                                <rect x="4" y="0" width="1" height="34"></rect>
+                                <rect x="7" y="0" width="3" height="34"></rect>
+                                <rect x="12" y="0" width="1" height="34"></rect>
+                                <rect x="15" y="0" width="2" height="34"></rect>
+                                <rect x="19" y="0" width="1" height="34"></rect>
+                                <rect x="22" y="0" width="4" height="34"></rect>
+                                <rect x="28" y="0" width="1" height="34"></rect>
+                                <rect x="31" y="0" width="2" height="34"></rect>
+                                <rect x="35" y="0" width="1" height="34"></rect>
+                                <rect x="38" y="0" width="3" height="34"></rect>
+                                <rect x="43" y="0" width="1" height="34"></rect>
+                                <rect x="46" y="0" width="2" height="34"></rect>
+                                <rect x="50" y="0" width="1" height="34"></rect>
+                                <rect x="53" y="0" width="4" height="34"></rect>
+                                <rect x="59" y="0" width="1" height="34"></rect>
+                                <rect x="62" y="0" width="2" height="34"></rect>
+                                <rect x="66" y="0" width="1" height="34"></rect>
+                                <rect x="69" y="0" width="3" height="34"></rect>
+                                <rect x="74" y="0" width="1" height="34"></rect>
+                                <rect x="77" y="0" width="2" height="34"></rect>
+                                <rect x="81" y="0" width="1" height="34"></rect>
+                                <rect x="84" y="0" width="4" height="34"></rect>
+                                <rect x="90" y="0" width="1" height="34"></rect>
+                                <rect x="93" y="0" width="2" height="34"></rect>
+                                <rect x="97" y="0" width="1" height="34"></rect>
+                                <rect x="100" y="0" width="3" height="34"></rect>
+                                <rect x="105" y="0" width="1" height="34"></rect>
+                                <rect x="108" y="0" width="2" height="34"></rect>
+                                <rect x="112" y="0" width="1" height="34"></rect>
+                                <rect x="115" y="0" width="3" height="34"></rect>
+                            </svg>
+                            <span>08462 194735</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </section>
 
-        <footer class="footer">
+        <footer class="footer" id="footer">
 
-            <div class="footer-content container">
+            <div class="footer-top container">
 
-    <div class="link">
-        <h3>Menú</h3>
-        <ul>
-            <li><a href="#">Cafés</a></li>
-            <li><a href="#">Bebidas frías</a></li>
-            <li><a href="#">Pastelería</a></li>
-            <li><a href="#">Opciones veganas</a></li>
-        </ul>
-    </div>
+                <p class="footer-intro">Bleu es café de especialidad y pastelería de autor en Rosario, Argentina.</p>
 
-    <div class="link">
-        <h3>Nosotros</h3>
-        <ul>
-            <li><a href="#">Nuestra historia</a></li>
-            <li><a href="#">El café que usamos</a></li>
-            <li><a href="#">Equipo</a></li>
-            <li><a href="#">Trabajá con nosotros</a></li>
-        </ul>
-    </div>
+                <div class="footer-content">
 
-    <div class="link">
-        <h3>Ubicación</h3>
-        <ul>
-            <li><a href="#">Cómo llegar</a></li>
-            <li><a href="#">Horarios</a></li>
-            <li><a href="#">Sucursales</a></li>
-            <li><a href="#">Reservas</a></li>
-        </ul>
-    </div>
+                    <div class="link">
+                        <h3>Menú</h3>
+                        <ul>
+                            <li><a href="pages/cafes.html">Cafés</a></li>
+                            <li><a href="pages/bebidas-frias.html">Bebidas frías</a></li>
+                            <li><a href="pages/pasteleria.html">Pastelería</a></li>
+                            <li><a href="pages/opciones-veganas.html">Opciones veganas</a></li>
+                        </ul>
+                    </div>
 
-    <div class="link">
-        <h3>Contacto</h3>
-        <ul>
-            <li><a href="#">WhatsApp</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Email</a></li>
-            <li><a href="#">Soporte</a></li>
-        </ul>
-    </div>
+                    <div class="link">
+                        <h3>Nosotros</h3>
+                        <ul>
+                            <li><a href="pages/nuestra-historia.html">Nuestra historia</a></li>
+                            <li><a href="pages/el-cafe-que-usamos.html">El café que usamos</a></li>
+                            <li><a href="pages/equipo.html">Equipo</a></li>
+                            <li><a href="pages/trabaja-con-nosotros.html">Trabajá con nosotros</a></li>
+                        </ul>
+                    </div>
 
-</div>
+                    <div class="link">
+                        <h3>Ubicación</h3>
+                        <ul>
+                            <li><a href="pages/como-llegar.html">Cómo llegar</a></li>
+                            <li><a href="pages/horarios.html">Horarios</a></li>
+                            <li><a href="pages/sucursales.html">Sucursales</a></li>
+                            <li><a href="pages/reservas.html">Reservas</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="link">
+                        <h3>Contacto</h3>
+                        <ul>
+                            <li><a href="pages/whatsapp.html">WhatsApp</a></li>
+                            <li><a href="pages/instagram.html">Instagram</a></li>
+                            <li><a href="pages/email.html">Email</a></li>
+                            <li><a href="pages/soporte.html">Soporte</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="footer-cta-group">
+                    <div class="footer-cta">
+                        <a href="pages/whatsapp.html">
+                            Escribinos
+                            <span class="footer-cta-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </span>
+                        </a>
+                        <p class="footer-cta-caption">Te respondemos al toque</p>
+                    </div>
+                    <div class="footer-cta">
+                        <a href="pages/instagram.html">
+                            Seguinos
+                            <span class="footer-cta-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </span>
+                        </a>
+                        <p class="footer-cta-caption">@bleu.cafeteria</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-wordmark-wrap">
+                <p class="footer-wordmark">Bleu.</p>
+            </div>
 
         </footer>
+
+        <div class="footer-bottom-bar">
+            <div class="footer-legal">
+                <span>Bleu. &copy;2026</span>
+                <span>·</span>
+                <a href="#">Política de privacidad</a>
+            </div>
+            <div class="footer-location">Rosario, Argentina</div>
+        </div>
 </body>
 </html>
