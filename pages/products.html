@@ -1,1 +1,263 @@
-<H1>Pagina en construccion</H1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Bleu Cafetería</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../assets/favicon-bleu.jpg" type="image/x-icon">
+</head>
+<body>
+
+    <header class="header sub-header">
+        <div class="menu container">
+
+            <a href="../index.html" class="logo"><img src="../assets/logo.png" alt="" class="img-logo"></a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="../assets/menu.png" class="menu-icono" alt="">
+            </label>
+            <label for="menu" class="navbar-backdrop"></label>
+
+            <nav class="navbar">
+                <div class="navbar-top">
+                    <a href="../index.html" class="navbar-logo"><img src="../assets/logo.png" alt=""></a>
+                    <label for="menu" class="navbar-close" aria-label="Cerrar menú">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="6" x2="18" y2="18"></line><line x1="18" y1="6" x2="6" y2="18"></line></svg>
+                    </label>
+                </div>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="products.html">Menú</a></li>
+                    <li><a href="nuestra-historia.html">Nosotros</a></li>
+                    <li><a href="como-llegar.html">Ubicación</a></li>
+                    <li><a href="#footer">Contacto</a></li>
+                </ul>
+                <div class="navbar-divider"></div>
+                <div class="navbar-secondary">
+                    <a href="reservas.html">Reservá tu mesa</a>
+                    <a href="whatsapp.html">Escribinos por WhatsApp</a>
+                </div>
+            </nav>
+
+        </div>
+
+        <div class="header-content container">
+            <span class="breadcrumb">Inicio / Menú / Productos</span>
+            <h1>Nuestros productos</h1>
+            <p>
+                Buscá y filtrá entre café, bebidas frías, pastelería y opciones veganas. Todo el catálogo en un solo lugar.
+            </p>
+        </div>
+    </header>
+
+    <section class="coffee">
+        <div class="coffee-content container">
+
+            <div class="products-toolbar">
+                <div class="products-search">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <input type="text" id="product-search" placeholder="Buscar productos...">
+                </div>
+
+                <div class="products-filters" id="product-filters">
+                    <button type="button" class="filter-pill active" data-filter="all">Todos</button>
+                    <button type="button" class="filter-pill" data-filter="cafes">Cafés</button>
+                    <button type="button" class="filter-pill" data-filter="frias">Bebidas frías</button>
+                    <button type="button" class="filter-pill" data-filter="pasteleria">Pastelería</button>
+                    <button type="button" class="filter-pill" data-filter="veganas">Veganas</button>
+                </div>
+
+                <div class="products-sort">
+                    <select id="product-sort">
+                        <option value="default">Ordenar por</option>
+                        <option value="price-asc">Precio: menor a mayor</option>
+                        <option value="price-desc">Precio: mayor a menor</option>
+                        <option value="name-asc">Nombre A-Z</option>
+                    </select>
+                </div>
+            </div>
+
+            <p class="products-count" id="products-count"></p>
+
+            <div class="coffee-group" id="products-grid"></div>
+
+            <p class="products-empty" id="products-empty">No encontramos productos que coincidan con tu búsqueda.</p>
+
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+
+        <div class="footer-top container">
+
+            <p class="footer-intro">Bleu es café de especialidad y pastelería de autor en Rosario, Argentina.</p>
+
+            <div class="footer-content">
+
+                <div class="link">
+                    <h3>Menú</h3>
+                    <ul>
+                        <li><a href="cafes.html">Cafés</a></li>
+                        <li><a href="bebidas-frias.html">Bebidas frías</a></li>
+                        <li><a href="pasteleria.html">Pastelería</a></li>
+                        <li><a href="opciones-veganas.html">Opciones veganas</a></li>
+                    </ul>
+                </div>
+
+                <div class="link">
+                    <h3>Nosotros</h3>
+                    <ul>
+                        <li><a href="nuestra-historia.html">Nuestra historia</a></li>
+                        <li><a href="el-cafe-que-usamos.html">El café que usamos</a></li>
+                        <li><a href="equipo.html">Equipo</a></li>
+                        <li><a href="trabaja-con-nosotros.html">Trabajá con nosotros</a></li>
+                    </ul>
+                </div>
+
+                <div class="link">
+                    <h3>Ubicación</h3>
+                    <ul>
+                        <li><a href="como-llegar.html">Cómo llegar</a></li>
+                        <li><a href="horarios.html">Horarios</a></li>
+                        <li><a href="sucursales.html">Sucursales</a></li>
+                        <li><a href="reservas.html">Reservas</a></li>
+                    </ul>
+                </div>
+
+                <div class="link">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><a href="whatsapp.html">WhatsApp</a></li>
+                        <li><a href="instagram.html">Instagram</a></li>
+                        <li><a href="email.html">Email</a></li>
+                        <li><a href="soporte.html">Soporte</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-cta-group">
+                <div class="footer-cta">
+                    <a href="whatsapp.html">
+                        Escribinos
+                        <span class="footer-cta-arrow">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </span>
+                    </a>
+                    <p class="footer-cta-caption">Te respondemos al toque</p>
+                </div>
+                <div class="footer-cta">
+                    <a href="instagram.html">
+                        Seguinos
+                        <span class="footer-cta-arrow">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </span>
+                    </a>
+                    <p class="footer-cta-caption">@bleu.cafeteria</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-wordmark-wrap">
+            <p class="footer-wordmark">Bleu.</p>
+        </div>
+
+    </footer>
+
+    <div class="footer-bottom-bar">
+        <div class="footer-legal">
+            <span>Bleu. &copy;2026</span>
+            <span>·</span>
+            <a href="#">Política de privacidad</a>
+        </div>
+        <div class="footer-location">Rosario, Argentina</div>
+    </div>
+
+    <script src="../assets/js/products-data.js"></script>
+    <script>
+        (function () {
+            var PRODUCTS = BLEU_PRODUCTS;
+            var state = { category: 'all', query: '', sort: 'default' };
+            var grid = document.getElementById('products-grid');
+            var countEl = document.getElementById('products-count');
+            var emptyEl = document.getElementById('products-empty');
+
+            function formatPrice(price) {
+                return Number.isInteger(price) ? price : price.toFixed(2);
+            }
+
+            function cardHTML(p) {
+                return '' +
+                    '<div class="coffee-1" data-id="' + p.id + '">' +
+                    '<div class="coffee-1-image">' +
+                    '<img src="../assets/' + p.img + '" alt="">' +
+                    '<button class="fav-btn" aria-label="Favorito">' +
+                    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>' +
+                    '</button>' +
+                    '</div>' +
+                    '<div class="description">' +
+                    '<h3>' + p.name + '</h3>' +
+                    '<div class="variants"><span class="variant active">' + CATEGORY_LABELS[p.cat] + '</span></div>' +
+                    '<p>' + p.desc + '</p>' +
+                    '<div class="price-row">' +
+                    '<span class="price">$' + formatPrice(p.price) + '</span>' +
+                    '<button class="btn-cart">' +
+                    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>' +
+                    '<span>Agregar</span>' +
+                    '</button>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
+            }
+
+            function getFiltered() {
+                var list = PRODUCTS.filter(function (p) {
+                    var matchesCategory = state.category === 'all' || p.cat === state.category;
+                    var matchesQuery = p.name.toLowerCase().indexOf(state.query) !== -1;
+                    return matchesCategory && matchesQuery;
+                });
+                if (state.sort === 'price-asc') list.sort(function (a, b) { return a.price - b.price; });
+                if (state.sort === 'price-desc') list.sort(function (a, b) { return b.price - a.price; });
+                if (state.sort === 'name-asc') list.sort(function (a, b) { return a.name.localeCompare(b.name); });
+                return list;
+            }
+
+            function render() {
+                var list = getFiltered();
+                grid.innerHTML = list.map(cardHTML).join('');
+                countEl.textContent = list.length + (list.length === 1 ? ' producto encontrado' : ' productos encontrados');
+                emptyEl.classList.toggle('show', list.length === 0);
+            }
+
+            grid.addEventListener('click', function (e) {
+                if (e.target.closest('button')) return;
+                var card = e.target.closest('.coffee-1');
+                if (card) window.location.href = 'producto.html?id=' + card.dataset.id;
+            });
+
+            document.getElementById('product-search').addEventListener('input', function (e) {
+                state.query = e.target.value.trim().toLowerCase();
+                render();
+            });
+
+            document.querySelectorAll('.filter-pill').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    document.querySelectorAll('.filter-pill').forEach(function (b) { b.classList.remove('active'); });
+                    btn.classList.add('active');
+                    state.category = btn.dataset.filter;
+                    render();
+                });
+            });
+
+            document.getElementById('product-sort').addEventListener('change', function (e) {
+                state.sort = e.target.value;
+                render();
+            });
+
+            render();
+        })();
+    </script>
+</body>
+</html>

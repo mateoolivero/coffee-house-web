@@ -17,14 +17,27 @@
             <label for="menu">
                 <img src="../assets/menu.png" class="menu-icono" alt="">
             </label>
+            <label for="menu" class="navbar-backdrop"></label>
 
             <nav class="navbar">
+                <div class="navbar-top">
+                    <a href="../index.html" class="navbar-logo"><img src="../assets/logo.png" alt=""></a>
+                    <label for="menu" class="navbar-close" aria-label="Cerrar menú">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="6" x2="18" y2="18"></line><line x1="18" y1="6" x2="6" y2="18"></line></svg>
+                    </label>
+                </div>
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../index.html">Servicios</a></li>
-                    <li><a href="products.html">Productos</a></li>
+                    <li><a href="products.html">Menú</a></li>
+                    <li><a href="nuestra-historia.html">Nosotros</a></li>
+                    <li><a href="como-llegar.html">Ubicación</a></li>
                     <li><a href="#footer">Contacto</a></li>
                 </ul>
+                <div class="navbar-divider"></div>
+                <div class="navbar-secondary">
+                    <a href="reservas.html">Reservá tu mesa</a>
+                    <a href="whatsapp.html">Escribinos por WhatsApp</a>
+                </div>
             </nav>
 
         </div>
@@ -38,42 +51,135 @@
         </div>
     </header>
 
-    <section class="page-section">
-        <h2>lo que sale del horno hoy</h2>
-        <p class="section-lead">
-            Elaboramos en pequeños lotes desde las 6 de la mañana. Cuando se agota un producto, lo retiramos de la vitrina hasta el día siguiente.
-        </p>
+    <section class="coffee">
+        <div class="coffee-content container">
+            <h2>lo que sale del horno hoy</h2>
+            <p class="txt-p">
+                Elaboramos en pequeños lotes desde las 6 de la mañana. Cuando se agota un producto, lo retiramos de la vitrina hasta el día siguiente.
+            </p>
 
-        <div class="info-grid">
-            <div class="info-card">
-                <h3>Croissant de Manteca</h3>
-                <p>Hojaldre de 36 capas, laminado a mano durante tres días.</p>
-                <span class="tag">$4.50</span>
-            </div>
-            <div class="info-card">
-                <h3>Medialunas Bleu</h3>
-                <p>Receta clásica de manteca, glaseadas apenas salen del horno.</p>
-                <span class="tag">$3.20 c/u</span>
-            </div>
-            <div class="info-card">
-                <h3>Cheesecake de Maracuyá</h3>
-                <p>Base de galletas de avena y coulis de maracuyá casero.</p>
-                <span class="tag">$6.80</span>
-            </div>
-            <div class="info-card">
-                <h3>Brownie de Café</h3>
-                <p>Chocolate 70% con un shot de nuestro espresso de la casa.</p>
-                <span class="tag">$4.00</span>
-            </div>
-            <div class="info-card">
-                <h3>Scon de Arándanos</h3>
-                <p>Textura crocante por fuera, tierna por dentro, con arándanos frescos.</p>
-                <span class="tag">$3.90</span>
-            </div>
-            <div class="info-card">
-                <h3>Alfajor de Maicena</h3>
-                <p>Relleno de dulce de leche artesanal y coco rallado.</p>
-                <span class="tag">$2.80</span>
+            <div class="coffee-group">
+
+                <div class="coffee-1">
+                    <div class="coffee-1-image">
+                        <img src="../assets/coffee-2.jpg" alt="">
+                        <button class="fav-btn" aria-label="Favorito">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="description">
+                        <h3>Croissant de Manteca</h3>
+                        <p>Hojaldre de 36 capas, laminado a mano durante tres días.</p>
+                        <div class="price-row">
+                            <span class="price">$4.50</span>
+                            <button class="btn-cart">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                                <span>Agregar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coffee-1">
+                    <div class="coffee-1-image">
+                        <img src="../assets/coffee-2.jpg" alt="">
+                        <button class="fav-btn" aria-label="Favorito">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="description">
+                        <h3>Medialunas Bleu</h3>
+                        <p>Receta clásica de manteca, glaseadas apenas salen del horno.</p>
+                        <div class="price-row">
+                            <span class="price">$3.20</span>
+                            <button class="btn-cart">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                                <span>Agregar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coffee-1">
+                    <div class="coffee-1-image">
+                        <img src="../assets/coffee-2.jpg" alt="">
+                        <button class="fav-btn" aria-label="Favorito">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="description">
+                        <h3>Cheesecake de Maracuyá</h3>
+                        <p>Base de galletas de avena y coulis de maracuyá casero.</p>
+                        <div class="price-row">
+                            <span class="price">$6.80</span>
+                            <button class="btn-cart">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                                <span>Agregar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coffee-1">
+                    <div class="coffee-1-image">
+                        <img src="../assets/coffee-2.jpg" alt="">
+                        <button class="fav-btn" aria-label="Favorito">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="description">
+                        <h3>Brownie de Café</h3>
+                        <p>Chocolate 70% con un shot de nuestro espresso de la casa.</p>
+                        <div class="price-row">
+                            <span class="price">$4.00</span>
+                            <button class="btn-cart">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                                <span>Agregar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coffee-1">
+                    <div class="coffee-1-image">
+                        <img src="../assets/coffee-2.jpg" alt="">
+                        <button class="fav-btn" aria-label="Favorito">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="description">
+                        <h3>Scon de Arándanos</h3>
+                        <p>Textura crocante por fuera, tierna por dentro, con arándanos frescos.</p>
+                        <div class="price-row">
+                            <span class="price">$3.90</span>
+                            <button class="btn-cart">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                                <span>Agregar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coffee-1">
+                    <div class="coffee-1-image">
+                        <img src="../assets/coffee-2.jpg" alt="">
+                        <button class="fav-btn" aria-label="Favorito">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="description">
+                        <h3>Alfajor de Maicena</h3>
+                        <p>Relleno de dulce de leche artesanal y coco rallado.</p>
+                        <div class="price-row">
+                            <span class="price">$2.80</span>
+                            <button class="btn-cart">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                                <span>Agregar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>

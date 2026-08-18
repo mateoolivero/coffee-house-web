@@ -17,14 +17,27 @@
             <label for="menu">
                 <img src="../assets/menu.png" class="menu-icono" alt="">
             </label>
+            <label for="menu" class="navbar-backdrop"></label>
 
             <nav class="navbar">
+                <div class="navbar-top">
+                    <a href="../index.html" class="navbar-logo"><img src="../assets/logo.png" alt=""></a>
+                    <label for="menu" class="navbar-close" aria-label="Cerrar menú">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="6" x2="18" y2="18"></line><line x1="18" y1="6" x2="6" y2="18"></line></svg>
+                    </label>
+                </div>
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../index.html">Servicios</a></li>
-                    <li><a href="products.html">Productos</a></li>
+                    <li><a href="products.html">Menú</a></li>
+                    <li><a href="nuestra-historia.html">Nosotros</a></li>
+                    <li><a href="como-llegar.html">Ubicación</a></li>
                     <li><a href="#footer">Contacto</a></li>
                 </ul>
+                <div class="navbar-divider"></div>
+                <div class="navbar-secondary">
+                    <a href="reservas.html">Reservá tu mesa</a>
+                    <a href="whatsapp.html">Escribinos por WhatsApp</a>
+                </div>
             </nav>
 
         </div>
@@ -33,7 +46,7 @@
             <span class="breadcrumb">Inicio / Menú / Cafés</span>
             <h1>Nuestros cafés</h1>
             <p>
-                Seis orígenes, seis perfiles. Molienda al momento y tueste propio para cada método de preparación.
+                Tres orígenes, dos formatos cada uno. Molienda al momento y tueste propio para cada método de preparación.
             </p>
         </div>
     </header>
@@ -42,26 +55,25 @@
         <div class="coffee-content container">
             <h2>catálogo de cafés</h2>
             <p class="txt-p">
-                Trabajamos con lotes de pequeños productores y los tostamos en nuestro obrador dos veces por semana para garantizar frescura en cada bolsa.
+                Tres orígenes, dos formatos cada uno. Molienda al momento y tueste propio para cada método de preparación.
             </p>
 
             <div class="coffee-group">
 
                 <div class="coffee-1">
                     <div class="coffee-1-image">
-                        <img src="../assets/6f799d3237689f710d7d190e9167872a.jpg" alt="">
+                        <img src="../assets/coffee-pack-01.jpg" alt="">
                         <button class="fav-btn" aria-label="Favorito">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
                         </button>
                     </div>
                     <div class="description">
-                        <h3>Café Kercha</h3>
+                        <h3>Café La Victoria</h3>
                         <div class="variants">
-                            <span class="variant">250g</span>
                             <span class="variant active">500g</span>
                             <span class="variant">1kg</span>
                         </div>
-                        <p>Origen etíope, proceso lavado, notas florales y a bergamota.</p>
+                        <p>Origen Ortega, Tolima, Colombia. Variedad Geisha, proceso lavado, con notas a crisantemo blanco, kiwi y nectarina amarilla.</p>
                         <div class="price-row">
                             <span class="price">$18</span>
                             <button class="btn-cart">
@@ -74,19 +86,42 @@
 
                 <div class="coffee-1">
                     <div class="coffee-1-image">
-                        <img src="../assets/375c1ad261abd066020fe32c51a0bc1c.jpg" alt="">
+                        <img src="../assets/coffee-pack-01.jpg" alt="">
                         <button class="fav-btn" aria-label="Favorito">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
                         </button>
                     </div>
                     <div class="description">
-                        <h3>Café La Berlina</h3>
+                        <h3>Café La Victoria — Pack 1kg</h3>
                         <div class="variants">
-                            <span class="variant">250g</span>
+                            <span class="variant">500g</span>
+                            <span class="variant active">1kg</span>
+                        </div>
+                        <p>El mismo origen Ortega, Tolima, en formato grande para el hogar o la oficina.</p>
+                        <div class="price-row">
+                            <span class="price">$32</span>
+                            <button class="btn-cart">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                                <span>Agregar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coffee-1">
+                    <div class="coffee-1-image">
+                        <img src="../assets/coffee-pack-02.jpg" alt="" style="object-position: center 60%;">
+                        <button class="fav-btn" aria-label="Favorito">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="description">
+                        <h3>Café Fazenda Pinhal 87+</h3>
+                        <div class="variants">
                             <span class="variant active">500g</span>
                             <span class="variant">1kg</span>
                         </div>
-                        <p>Blend brasileño y colombiano, cuerpo alto, notas a chocolate y nuez.</p>
+                        <p>Origen Minas Gerais, Brasil. Variedades Arara, Catucaí y Catiguá, proceso natural anaeróbico de 96 horas, con notas a pera, durazno amarillo y azúcar de caña.</p>
                         <div class="price-row">
                             <span class="price">$20</span>
                             <button class="btn-cart">
@@ -99,21 +134,20 @@
 
                 <div class="coffee-1">
                     <div class="coffee-1-image">
-                        <img src="../assets/0dcaaf9de66eda417f1bb5ca47e615af.jpg" alt="">
+                        <img src="../assets/coffee-pack-02.jpg" alt="" style="object-position: center 60%;">
                         <button class="fav-btn" aria-label="Favorito">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
                         </button>
                     </div>
                     <div class="description">
-                        <h3>Café Yula</h3>
+                        <h3>Café Fazenda Pinhal 87+ — Pack 1kg</h3>
                         <div class="variants">
-                            <span class="variant">250g</span>
-                            <span class="variant active">500g</span>
-                            <span class="variant">1kg</span>
+                            <span class="variant">500g</span>
+                            <span class="variant active">1kg</span>
                         </div>
-                        <p>Proceso honey, dulzor natural y acidez cítrica suave.</p>
+                        <p>Blend intenso de Minas Gerais en formato familiar de un kilo.</p>
                         <div class="price-row">
-                            <span class="price">$16</span>
+                            <span class="price">$36</span>
                             <button class="btn-cart">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
                                 <span>Agregar</span>
@@ -124,71 +158,44 @@
 
                 <div class="coffee-1">
                     <div class="coffee-1-image">
-                        <img src="../assets/coffee-product-01.png" alt="">
+                        <img src="../assets/coffee-pack-03.jpg" alt="">
                         <button class="fav-btn" aria-label="Favorito">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
                         </button>
                     </div>
                     <div class="description">
-                        <h3>Café Monte Azul</h3>
+                        <h3>Café Dulce Misterio</h3>
                         <div class="variants">
-                            <span class="variant">250g</span>
                             <span class="variant active">500g</span>
                             <span class="variant">1kg</span>
                         </div>
-                        <p>Guatemala de altura, cuerpo medio, final a caramelo tostado.</p>
-                        <div class="price-row">
-                            <span class="price">$21</span>
-                            <button class="btn-cart">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-                                <span>Agregar</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="coffee-1">
-                    <div class="coffee-1-image">
-                        <img src="../assets/coffee-product-02.png" alt="">
-                        <button class="fav-btn" aria-label="Favorito">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
-                        </button>
-                    </div>
-                    <div class="description">
-                        <h3>Café Sol Naciente</h3>
-                        <div class="variants">
-                            <span class="variant">250g</span>
-                            <span class="variant active">500g</span>
-                            <span class="variant">1kg</span>
-                        </div>
-                        <p>Tueste claro pensado para filtrados, taza brillante y liviana.</p>
-                        <div class="price-row">
-                            <span class="price">$19</span>
-                            <button class="btn-cart">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-                                <span>Agregar</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="coffee-1">
-                    <div class="coffee-1-image">
-                        <img src="../assets/coffee-product-03.png" alt="">
-                        <button class="fav-btn" aria-label="Favorito">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
-                        </button>
-                    </div>
-                    <div class="description">
-                        <h3>Café Tierra Roja</h3>
-                        <div class="variants">
-                            <span class="variant">250g</span>
-                            <span class="variant active">500g</span>
-                            <span class="variant">1kg</span>
-                        </div>
-                        <p>Tueste oscuro, cuerpo intenso, ideal para espresso y bombón.</p>
+                        <p>Origen Nariño, Colombia. Variedad Bourbon Aji, proceso lavado, con notas a melón, manzanilla y miel.</p>
                         <div class="price-row">
                             <span class="price">$17</span>
+                            <button class="btn-cart">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                                <span>Agregar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coffee-1">
+                    <div class="coffee-1-image">
+                        <img src="../assets/coffee-pack-03.jpg" alt="">
+                        <button class="fav-btn" aria-label="Favorito">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path></svg>
+                        </button>
+                    </div>
+                    <div class="description">
+                        <h3>Café Dulce Misterio — Pack 1kg</h3>
+                        <div class="variants">
+                            <span class="variant">500g</span>
+                            <span class="variant active">1kg</span>
+                        </div>
+                        <p>El mismo origen Nariño en formato grande, ideal para consumo diario.</p>
+                        <div class="price-row">
+                            <span class="price">$30</span>
                             <button class="btn-cart">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
                                 <span>Agregar</span>
